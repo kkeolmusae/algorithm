@@ -247,7 +247,7 @@ while (events = demultiplexer.watch(watchedList)){
     }
 }
 ```
-![Event_Demultiplexing](./img/Event Demultiplexing.jpg)
+![Event_Demultiplexing](./img/EventDemultiplexing.jpg)
 
 ### - Reactor 패턴 소개
 
@@ -255,7 +255,7 @@ while (events = demultiplexer.watch(watchedList)){
 
 > reactor패턴은 이벤트 핸들 패턴의 전형적인 모습이다. application이 능동적으로 계속해서 처리하기위한 루프를 도는 것이 아니라, 이벤트에 반응하는 객체(reactor)를 만들고, 사건(이벤트)이 발생하면 application대신 reactor가 반응하여 처리하는 것이다. reactor는 이벤트가 발생하길 기다리고, 이벤트가 발생하면 event handler에게 이벤트를 발송한다. 따로 application에서 event를 대기하고 분할하는 작업을 하지 않아도 동작할 수 있기 때문에 이벤트 multiplexing을 구현하는데 좋은 구조이다. <br>출처: https://ozt88.tistory.com/25 [공부 모음]
 
-![Reactor_Pattern](./img/Reactor pattern.jpg)
+![ReactorPattern](./img/ReactorPattern.jpg)
 
 1. 어플리케이션은 **이벤트 디멀티 플렉서**에 요청을 전달함으로써 새로운 I/O 작업을 생성함. 또한 어플리케이션은 처리가 완료될 때 호출될 핸들러를 지정함. **이벤트 디멀티 플렉서**에 새 요청을 전달하는 것ㅇ느 논 블로킹 호출이며, 즉시 어플리케이션에 제어를 반환함.
    
@@ -275,4 +275,4 @@ while (events = demultiplexer.watch(watchedList)){
 libuv는 기본 시스템 호출을 추상화하는 것 외에도 Reactor 패턴을 구현하고 있으므로 이벤트 루프를 만들고, 이벤트 큐를 관리하며, 비동기 입출력 작업을 실행하고, 다른 유형의 작업을 큐에 담기위한 API들을 제공한다.
 
 ### - Node.js를 위한 구조
-![Node.js_Structure](./img/Node.js Structure.png)
+![Node.js_Structure](img/Node.js_Structure.png)
