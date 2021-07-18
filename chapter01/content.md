@@ -211,6 +211,68 @@ print(data);
 
 이렇게 해서 스레드가 I/O 작업으로 차단되어도 분리된 스레드에서 처리되므로 다른 요청의 가용성에는 영향을 미치지 않는다.
 
-![BlockingIO](./img/BlockingIO.jpg){: width='100' height='100'}
+![BlockingIO](./img/BlockingIO.jpg)
 
-![title](./img/BlockingIO.png){: width="100" height="100"}
+
+### - 논 블로킹 I/O
+데이터가 읽히거나 쓰여질때까지 기다리지 않고 항상 즉시 반환된다. 호출하는 순간에 결과를 사용할 수 없는 경우, 이 함수는 단순히 미리 정의된 상수를 반환하여 그 순간에 반환할 수 있는 데이터가 없음을 나타낸다.
+
+ex) Unix 운영체제에서 fcntl()함수는 기존 파일 디스크립터(file descriptor)를 조작하여 운영 모드를 논 블로킹으로 변경하는데 사용한다.
+
+이러한 종류를 논 블로킹 I/O에 액세스하는 가장 기본적인 패턴은 실제 데이터가 반환될 때까지 루프 내에서 리소스를 적극적으로 폴링(polling) 하는 것이다. 이를 **busy-waiting** 이라고 한다.
+
+
+### - 이벤트 디멀티플렉싱
+> 디멀티플렉서 - 디멀티플렉서(demultiplexer, demux)는 하나의 입력 신호를 받아서 수많은 데이터 출력선 중 하나를 선택하는 장치를 말하며 단일 입력으로 연결된다
+[ 출처: [위키](https://ko.wikipedia.org/wiki/%EB%A9%80%ED%8B%B0%ED%94%8C%EB%A0%89%EC%84%9C) ]
+
+효율적인 논 블로킹 리소스 처리를 위한 기본적인 메커니즘 -> 동기 이벤트 디멀티플렉서 (이벤트 통지 인터페이스)
+
+감시된 일련의 리소스들로부터 들어오는 I/O 이벤트를 수집하여 큐에 넣고 처리할 수 있는 새 이벤트가 있을 때까지 차단함.
+```javascript
+// pseudo code
+socketA, pipeB;
+watchedList.add(socketA, FOR_READ);
+watchedList.add(pipeB, FOR_READ);
+while (events = demultiplexer.watch(watchedList)){
+    foreach(event in events) {
+        //여기서 read는 블록되지 않으며, 비어 있어도 항상 데이터를 반환함.
+        data = event.resource.read();
+        if(data === RESOURCE_CLOSED)
+            //리소스가 닫혔기 때문에, 리소스 목록에서 제거
+            demultiplexer.unwatch(event.resource)
+        else
+            // 실제 데이터 도착->처리
+            consumeData(data);
+    }
+}
+```
+![Event Demultiplexing](./img/Event Demultiplexing.jpg)
+
+### - Reactor 패턴 소개
+
+각 I/O 작업과 관련된 핸들러(Node.js에서 callback 함수로 표시)를 갖는 것. 이 핸들러는 이벤트가 생성되어 이벤트 루프에 의해 처리되는 즉시 호출됨.
+
+> reactor패턴은 이벤트 핸들 패턴의 전형적인 모습이다. application이 능동적으로 계속해서 처리하기위한 루프를 도는 것이 아니라, 이벤트에 반응하는 객체(reactor)를 만들고, 사건(이벤트)이 발생하면 application대신 reactor가 반응하여 처리하는 것이다. reactor는 이벤트가 발생하길 기다리고, 이벤트가 발생하면 event handler에게 이벤트를 발송한다. 따로 application에서 event를 대기하고 분할하는 작업을 하지 않아도 동작할 수 있기 때문에 이벤트 multiplexing을 구현하는데 좋은 구조이다. <br>출처: https://ozt88.tistory.com/25 [공부 모음]
+
+![Reactor pattern](./img/Reactor pattern.jpg)
+
+1. 어플리케이션은 **이벤트 디멀티 플렉서**에 요청을 전달함으로써 새로운 I/O 작업을 생성함. 또한 어플리케이션은 처리가 완료될 때 호출될 핸들러를 지정함. **이벤트 디멀티 플렉서**에 새 요청을 전달하는 것ㅇ느 논 블로킹 호출이며, 즉시 어플리케이션에 제어를 반환함.
+   
+2. 일련의 I/O 작업들이 완료되면 **이벤트 디멀티 플렉서**는 새 이벤트를 **이벤트 큐**에 집어넣음
+
+3. 이 시점에서 **이벤트 루프**가 **이벤트 큐**의 항목들에 대해 반복함
+
+4. 각 이벤트에 대해서 관련된 핸들러가 호출됨
+
+5. 어플리케이션 코드의 일부인 핸들러는 실행이 완료되면 **이벤트 루프**에 제어를 되돌림(5a). 그러나 핸들러의 실행 중에 새로운 비동기 동작이 요청(5b)이 발생하여 제어가 **이벤트 루프**로 돌아가기 전에 새로운 요청이 **이벤트 디멀티 플렉서(1)**에 삽입될 수도 있음.
+
+6. **이벤트 큐** 내의 모든 항목이 처리되면, 루프는 **이벤트 디멀티 플렉서**에서 다시 블록되고 처리 가능한 새로운 이벤트가 있을 때 이 과정이 다시 트리거될 것임.
+
+> Node.js 어플리케이션은 이벤트 디멀티플레서에 더 이상 보류 중인 작업이 없고 이벤트 큐에서 더 이상 처리할 이벤트가 없을 때 자동으로 종료됨.
+ 
+### - Node.js의 논 블로킹 엔진 libuv
+libuv는 기본 시스템 호출을 추상화하는 것 외에도 Reactor 패턴을 구현하고 있으므로 이벤트 루프를 만들고, 이벤트 큐를 관리하며, 비동기 입출력 작업을 실행하고, 다른 유형의 작업을 큐에 담기위한 API들을 제공한다.
+
+### - Node.js를 위한 구조
+![Node.js Structure](./img/Node.js Structure.png)
