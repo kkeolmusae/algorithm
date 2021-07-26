@@ -20,6 +20,11 @@ Nodejs의 디자인 패턴을 이해하고, 실무에서 한 차원 높은 웹 �
 ## 내용
 
 ### Node.js Required Patterns
+2.1 - 콜백 패턴
+
+2.2 - 모듈 시스템과 그 패턴
+
+2.3 - 관찰자 패턴
 
 ### Asynchronous Control Flow Patterns with Callback
 
