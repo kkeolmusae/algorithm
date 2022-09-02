@@ -41,6 +41,16 @@
  * - Use your get function to find the specific node.
  * - If the node is not found, return false.
  * - If the node is found, set the value of that node to be the value passed to the function and return treu.
+ *
+ * insert : Adding a node to the Linked List at the specific position.
+ * - If the index is less than zero or grater than the length, return false.
+ * - If the index is the same as the length, push a new node to the end of the list.
+ * - If the index is 0, unshift a new node to the start of the list
+ * - Otherwise, using the get method, access the node at the index-1
+ * - Set the next property on that node to be the new node.
+ * - Set the next property on the new node to be the previous next.
+ * - Increment the length.
+ * - Return true.
  */
 
 class Node {
@@ -144,6 +154,21 @@ class SinglyLinkedList {
     const currentNode = this.get(idx);
     if (!currentNode) return false;
     currentNode.val = val;
+    return true;
+  }
+
+  insert(idx, val) {
+    if (idx < 0 || idx > this.length) return false;
+    if (idx === 0) !!this.unshift(val);
+    if (idx === this.length) !!this.push(val);
+
+    const newNode = new Node(val);
+    const prevNode = this.get(idx - 1);
+    const nextNode = prevNode.next;
+
+    newNode.next = nextNode;
+    prevNode.next = newNode;
+    this.length++;
     return true;
   }
 }
