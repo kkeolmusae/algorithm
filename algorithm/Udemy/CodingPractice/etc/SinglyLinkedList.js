@@ -51,6 +51,26 @@
  * - Set the next property on the new node to be the previous next.
  * - Increment the length.
  * - Return true.
+ *
+ * remove : Repmoving a node from the Linked List at a specific position.
+ * - If the Index is less than zero or greater than the length, return undefined.
+ * - If the index is the same ase the length-1, pop
+ * - If the index is 0, shift.
+ * - Otherwise, using the get method, access the node at the index - 1.
+ * - Set the next property on that node to be the next of the next node.
+ * - Decrement the length.
+ * - Return the value of the node removed.
+ *
+ * reverse : Reversing the Linked List in place!
+ * - Swap the head and tail.
+ * - Create a variable called next.
+ * - Create a variable called prev.
+ * - Crate a variable called node and initialize it to the head property.
+ * - Loop through the list.
+ * - Set next to be the next property on whatever node is.
+ * - Set the next property on the node to be whatever prev is.
+ * - Set prev to be the value of the node variable.
+ * - Set the node variable to bn the value of the next variable.
  */
 
 class Node {
@@ -171,4 +191,36 @@ class SinglyLinkedList {
     this.length++;
     return true;
   }
+
+  remove(idx) {
+    if (idx < 0 || idx >= this.length) return undefined;
+    if (idx === this.length - 1) return this.pop();
+    if (idx === 0) return this.shift();
+
+    const prevNode = this.get(idx - 1);
+    const currentNode = prevNode.next;
+    prevNode.next = currentNode.next;
+    this.length--;
+    return currentNode;
+  }
+
+  reverse() {
+    const node = this.head;
+    this.head = this.tail;
+    this.tail = node;
+
+    let nextNode;
+    let prevNode = null;
+    for (let idx = 0; idx < this.length; idx++) {
+      nextNode = node.next;
+      node.next = prevNode;
+      prevNode = node;
+      node = nextNode;
+    }
+    return this;
+  }
 }
+
+//               A      ->      B       ->      C        ->       D
+// null         node          next
+//                t                                                 h
