@@ -205,7 +205,7 @@ class SinglyLinkedList {
   }
 
   reverse() {
-    const node = this.head;
+    let node = this.head;
     this.head = this.tail;
     this.tail = node;
 
