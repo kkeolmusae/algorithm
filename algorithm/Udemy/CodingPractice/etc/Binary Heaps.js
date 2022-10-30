@@ -19,7 +19,8 @@
 
 class MaxBinaryHeap {
   constructor() {
-    this.values = [41, 39, 33, 18, 27, 12];
+    this.values = [55, 39, 41, 18, 27, 12, 33];
+    console.log(this.values);
   }
 
   insert(elem) {
@@ -42,6 +43,38 @@ class MaxBinaryHeap {
     }
   }
 
+  extractMax() {
+    const firstIdx = 0;
+    const lastIdx = this.values.length - 1;
+    this.swap(this.values, firstIdx, lastIdx);
+    this.values.pop();
+    this.sinkingDown();
+    console.log(this.values);
+  }
+
+  sinkingDown() {
+    let parentIdx = 0;
+    let leftChildIdx = parentIdx * 2 + 1;
+    let rightChildIdx = parentIdx * 2 + 2;
+
+    while (true) {
+      if (this.values[leftChildIdx] > this.values[parentIdx] && this.values[leftChildIdx] > this.values[rightChildIdx]) {
+        this.swap(this.values, leftChildIdx, parentIdx);
+        parentIdx = leftChildIdx;
+      } else if (this.values[rightChildIdx] > this.values[parentIdx] && this.values[rightChildIdx] > this.values[leftChildIdx]) {
+        this.swap(this.values, rightChildIdx, parentIdx);
+        parentIdx = rightChildIdx;
+      } else {
+        if (this.values.length === 2 && this.values[parentIdx] < this.values[leftChildIdx]) {
+          this.swap(this.values, parentIdx, leftChildIdx);
+        }
+        break;
+      }
+      leftChildIdx = parentIdx * 2 + 1;
+      rightChildIdx = parentIdx * 2 + 2;
+    }
+  }
+
   swap(arr, idx1, idx2) {
     const tmp = arr[idx1];
     arr[idx1] = arr[idx2];
@@ -50,16 +83,16 @@ class MaxBinaryHeap {
 }
 
 let heap = new MaxBinaryHeap();
-heap.insert(55);
-heap.insert(30);
-heap.insert(10);
-heap.insert(80);
-heap.insert(40);
-heap.insert(2);
+heap.extractMax();
+heap.extractMax();
+heap.extractMax();
+heap.extractMax();
+heap.extractMax();
+heap.extractMax();
 /**
- * 41 39 33 18 27 12 55
+ * 55, 39, 41, 18, 27, 12, 33
  * 0  1  2  3  4  5  6
- *      41
- *  39       33
- * 18 27   12  55
+ *      35
+ *  20       33
+ * 18 28   10
  */
