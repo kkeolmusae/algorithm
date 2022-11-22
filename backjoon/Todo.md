@@ -15,20 +15,20 @@
 
 - [X] [단어 뒤집기 2](https://www.acmicpc.net/problem/17413)
 - [X] [쇠막대기](https://www.acmicpc.net/problem/10799)
-- [X] [오큰수](https://www.acmicpc.net/problem/17298)
-- [ ] [오등큰수](https://www.acmicpc.net/problem/17299)
+- [X] [오큰수](https://www.acmicpc.net/problem/17298) (Review)
+- [X] [오등큰수](https://www.acmicpc.net/problem/17299)
 
 #### 203 - 자료구조 1 (참고)
 
-- [X] [후위 표기식2](https://www.acmicpc.net/problem/1935)
-- [ ] [후위 표기식](https://www.acmicpc.net/problem/1918)
-- [ ] [알파벳 개수](https://www.acmicpc.net/problem/10808)
-- [ ] [알파벳 찾기](https://www.acmicpc.net/problem/10809)
-- [ ] [문자열 분석](https://www.acmicpc.net/problem/10820)
-- [ ] [단어 길이 재기](https://www.acmicpc.net/problem/2743)
-- [ ] [ROT13](https://www.acmicpc.net/problem/11655)
-- [ ] [네 수](https://www.acmicpc.net/problem/10824)
-- [ ] [접미사 배열](https://www.acmicpc.net/problem/11656)
+- [X] [후위 표기식2](https://www.acmicpc.net/problem/1935) (Review)
+- [X] [후위 표기식](https://www.acmicpc.net/problem/1918) (Review)
+- [X] [알파벳 개수](https://www.acmicpc.net/problem/10808)
+- [X] [알파벳 찾기](https://www.acmicpc.net/problem/10809)
+- [X] [문자열 분석](https://www.acmicpc.net/problem/10820)
+- [X] [단어 길이 재기](https://www.acmicpc.net/problem/2743)
+- [X] [ROT13](https://www.acmicpc.net/problem/11655)
+- [X] [네 수](https://www.acmicpc.net/problem/10824)
+- [X] [접미사 배열](https://www.acmicpc.net/problem/11656)
 
 #### 300 - 수학 1
 
