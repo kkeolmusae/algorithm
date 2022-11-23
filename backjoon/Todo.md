@@ -33,10 +33,10 @@
 #### 300 - 수학 1
 
 - [X] [나머지](https://www.acmicpc.net/problem/10430)
-- [ ] [최대공약수와 최소공배수](https://www.acmicpc.net/problem/2609)
-- [ ] [최소공배수](https://www.acmicpc.net/problem/1934)
-- [ ] [소수 찾기](https://www.acmicpc.net/problem/1978)
-- [ ] [소수 구하기](https://www.acmicpc.net/problem/1929)
+- [X] [최대공약수와 최소공배수](https://www.acmicpc.net/problem/2609)
+- [X] [최소공배수](https://www.acmicpc.net/problem/1934)
+- [X] [소수 찾기](https://www.acmicpc.net/problem/1978)
+- [X] [소수 구하기](https://www.acmicpc.net/problem/1929) (Review)
 - [ ] [골드바흐의 추측](https://www.acmicpc.net/problem/6588)
 - [ ] [팩토리얼](https://www.acmicpc.net/problem/10872)
 - [ ] [팩토리얼 0의 개수](https://www.acmicpc.net/problem/1676)
