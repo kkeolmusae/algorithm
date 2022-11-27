@@ -39,12 +39,12 @@
 - [X] [소수 구하기](https://www.acmicpc.net/problem/1929) (Review)
 - [X] [골드바흐의 추측](https://www.acmicpc.net/problem/6588)
 - [X] [팩토리얼](https://www.acmicpc.net/problem/10872)
-- [X] [팩토리얼 0의 개수](https://www.acmicpc.net/problem/1676)
-- [ ] [조합 0의 개수](https://www.acmicpc.net/problem/2004)
+- [X] [팩토리얼 0의 개수](https://www.acmicpc.net/problem/1676) (Math)
+- [X] [조합 0의 개수](https://www.acmicpc.net/problem/2004) (Math)
 
 #### 301 - 수학 1 (연습)
 
-- [ ] [GCD 합](https://www.acmicpc.net/problem/9613)
+- [X] [GCD 합](https://www.acmicpc.net/problem/9613)
 - [ ] [숨바꼭질 6](https://www.acmicpc.net/problem/17087)
 - [ ] [2진수 8진수](https://www.acmicpc.net/problem/1373)
 - [ ] [8진수 2진수](https://www.acmicpc.net/problem/1212)
