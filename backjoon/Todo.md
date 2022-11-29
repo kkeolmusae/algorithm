@@ -45,9 +45,9 @@
 #### 301 - 수학 1 (연습)
 
 - [X] [GCD 합](https://www.acmicpc.net/problem/9613)
-- [ ] [숨바꼭질 6](https://www.acmicpc.net/problem/17087)
-- [ ] [2진수 8진수](https://www.acmicpc.net/problem/1373)
-- [ ] [8진수 2진수](https://www.acmicpc.net/problem/1212)
+- [X] [숨바꼭질 6](https://www.acmicpc.net/problem/17087)
+- [X] [2진수 8진수](https://www.acmicpc.net/problem/1373)
+- [X] [8진수 2진수](https://www.acmicpc.net/problem/1212)
 - [ ] [\-2진수](https://www.acmicpc.net/problem/2089)
 - [ ] [골드바흐 파티션](https://www.acmicpc.net/problem/17103)
 
