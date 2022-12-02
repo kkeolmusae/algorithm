@@ -48,15 +48,15 @@
 - [X] [숨바꼭질 6](https://www.acmicpc.net/problem/17087)
 - [X] [2진수 8진수](https://www.acmicpc.net/problem/1373)
 - [X] [8진수 2진수](https://www.acmicpc.net/problem/1212)
-- [ ] [\-2진수](https://www.acmicpc.net/problem/2089)
-- [ ] [골드바흐 파티션](https://www.acmicpc.net/problem/17103)
+- [X] [\-2진수](https://www.acmicpc.net/problem/2089)
+- [X] [골드바흐 파티션](https://www.acmicpc.net/problem/17103)
 
 #### 303 - 수학 1 (참고)
 
-- [ ] [진법 변환 2](https://www.acmicpc.net/problem/11005)
-- [ ] [진법 변환](https://www.acmicpc.net/problem/2745)
-- [ ] [Base Conversion](https://www.acmicpc.net/problem/11576)
-- [ ] [소인수분해](https://www.acmicpc.net/problem/11653)
+- [X] [진법 변환 2](https://www.acmicpc.net/problem/11005)
+- [X] [진법 변환](https://www.acmicpc.net/problem/2745)
+- [X] [Base Conversion](https://www.acmicpc.net/problem/11576)
+- [X] [소인수분해](https://www.acmicpc.net/problem/11653)
 
 #### 400 - 다이나믹 프로그래밍 1
 
