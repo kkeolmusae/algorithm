@@ -60,9 +60,10 @@
 
 #### 400 - 다이나믹 프로그래밍 1
 
-- [ ] [1로 만들기](https://www.acmicpc.net/problem/1463)
-- [ ] [2×n 타일링](https://www.acmicpc.net/problem/11726)
-- [ ] [2×n 타일링 2](https://www.acmicpc.net/problem/11727)
+- [X] [1로 만들기](https://www.acmicpc.net/problem/1463) (Review)
+- [X] [설탕배달](https://www.acmicpc.net/problem/2839) (Plus)
+- [X] [2×n 타일링](https://www.acmicpc.net/problem/11726)
+- [X] [2×n 타일링 2](https://www.acmicpc.net/problem/11727)
 - [ ] [1, 2, 3 더하기](https://www.acmicpc.net/problem/9095)
 - [ ] [카드 구매하기](https://www.acmicpc.net/problem/11052)
 - [ ] [카드 구매하기 2](https://www.acmicpc.net/problem/16194)
