@@ -17,7 +17,6 @@ function solution(input) {
   let num = Number(input);
   const dp = {};
 
-  dp[0] = 0;
   for (let i = 0; i <= num; i++) {
     dp[i] = i;
     for (let j = 1; j ** 2 <= i; j++) {
