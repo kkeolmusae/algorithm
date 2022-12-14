@@ -71,10 +71,10 @@
 - [X] [쉬운 계단 수](https://www.acmicpc.net/problem/10844)
 - [X] [이친수](https://www.acmicpc.net/problem/2193)
 - [X] [가장 긴 증가하는 부분 수열](https://www.acmicpc.net/problem/11053)
-- [ ] [가장 긴 증가하는 부분 수열 4](https://www.acmicpc.net/problem/14002)
+- [X] [가장 긴 증가하는 부분 수열 4](https://www.acmicpc.net/problem/14002)
 - [X] [연속합](https://www.acmicpc.net/problem/1912)
 - [X] [제곱수의 합](https://www.acmicpc.net/problem/1699)
-- [ ] [합분해](https://www.acmicpc.net/problem/2225)
+- [X] [합분해](https://www.acmicpc.net/problem/2225)
 
 #### 401 - 다이나믹 프로그래밍 1 (연습)
 
