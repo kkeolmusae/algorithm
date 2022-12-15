@@ -78,9 +78,9 @@
 
 #### 401 - 다이나믹 프로그래밍 1 (연습)
 
-- [ ] [1, 2, 3 더하기 3](https://www.acmicpc.net/problem/15988)
-- [ ] [RGB거리](https://www.acmicpc.net/problem/1149)
-- [ ] [동물원](https://www.acmicpc.net/problem/1309)
+- [X] [1, 2, 3 더하기 3](https://www.acmicpc.net/problem/15988)
+- [X] [RGB거리](https://www.acmicpc.net/problem/1149)
+- [X] [동물원](https://www.acmicpc.net/problem/1309)
 - [ ] [오르막 수](https://www.acmicpc.net/problem/11057)
 - [ ] [스티커](https://www.acmicpc.net/problem/9465)
 - [ ] [포도주 시식](https://www.acmicpc.net/problem/2156)
