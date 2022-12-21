@@ -45,6 +45,10 @@ dp[i] = Math.min(dp[i], dp[i - j]);
 
 [스티커](https://www.acmicpc.net/problem/9465)
 
+[가장 큰 증가 부분 수열](https://www.acmicpc.net/problem/11055)
+
+[가장 긴 감소하는 부분 수열](https://www.acmicpc.net/problem/11722)
+
 <br>
 
 ## 3. 2차원 배열 사용하기 (dp[i][j])
