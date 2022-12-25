@@ -97,6 +97,10 @@
 - [ ] [RGB거리 2](https://www.acmicpc.net/problem/17404)
 - [ ] [합분해](https://www.acmicpc.net/problem/2225)
 
+#### 403 - 다이나믹 프로그래밍 0 (보충)
+- [X] [피보나치 함수](https://www.acmicpc.net/problem/1003)
+- [X] [부녀회장이 될테야](https://www.acmicpc.net/problem/2775)
+- [X] [계단 오르기](https://www.acmicpc.net/problem/2579)
 ---
 
 ## **알고리즘 기초 2/2**
