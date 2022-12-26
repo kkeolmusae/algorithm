@@ -103,6 +103,8 @@
 - [X] [계단 오르기](https://www.acmicpc.net/problem/2579)
 - [X] [정수 삼각형](https://www.acmicpc.net/problem/1932)
 - [X] [파도반 수열](https://www.acmicpc.net/problem/9461)
+- [X] [피보나치 수 2](https://www.acmicpc.net/problem/2748)
+- [X] [다리 놓기](https://www.acmicpc.net/problem/1010)
 ---
 
 ## **알고리즘 기초 2/2**
