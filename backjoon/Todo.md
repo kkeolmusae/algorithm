@@ -87,8 +87,8 @@
 - [X] [정수 삼각형](https://www.acmicpc.net/problem/1932)
 - [X] [가장 큰 증가 부분 수열](https://www.acmicpc.net/problem/11055)
 - [X] [가장 긴 감소하는 부분 수열](https://www.acmicpc.net/problem/11722)
-- [ ] [가장 긴 바이토닉 부분 수열](https://www.acmicpc.net/problem/11054)
-- [ ] [연속합 2](https://www.acmicpc.net/problem/13398)
+- [X] [가장 긴 바이토닉 부분 수열](https://www.acmicpc.net/problem/11054)
+- [X] [연속합 2](https://www.acmicpc.net/problem/13398)
 - [ ] [타일 채우기](https://www.acmicpc.net/problem/2133)
 
 #### 402 - 다이나믹 프로그래밍 1 (도전)
