@@ -105,6 +105,8 @@
 - [X] [파도반 수열](https://www.acmicpc.net/problem/9461)
 - [X] [피보나치 수 2](https://www.acmicpc.net/problem/2748)
 - [X] [다리 놓기](https://www.acmicpc.net/problem/1010)
+- [X] [01타일](https://www.acmicpc.net/problem/1904)
+- [X] [퇴사](https://www.acmicpc.net/problem/14051)
 ---
 
 ## **알고리즘 기초 2/2**
