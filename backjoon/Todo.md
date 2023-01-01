@@ -89,13 +89,13 @@
 - [X] [가장 긴 감소하는 부분 수열](https://www.acmicpc.net/problem/11722)
 - [X] [가장 긴 바이토닉 부분 수열](https://www.acmicpc.net/problem/11054)
 - [X] [연속합 2](https://www.acmicpc.net/problem/13398)
-- [ ] [타일 채우기](https://www.acmicpc.net/problem/2133)
+- [X] [타일 채우기](https://www.acmicpc.net/problem/2133)
 
 #### 402 - 다이나믹 프로그래밍 1 (도전)
 
-- [ ] [동물원](https://www.acmicpc.net/problem/1309)
-- [ ] [RGB거리 2](https://www.acmicpc.net/problem/17404)
-- [ ] [합분해](https://www.acmicpc.net/problem/2225)
+- [X] [동물원](https://www.acmicpc.net/problem/1309)
+- [X] [RGB거리 2](https://www.acmicpc.net/problem/17404) (Review)
+- [X] [합분해](https://www.acmicpc.net/problem/2225)
 
 #### 403 - 다이나믹 프로그래밍 0 (보충) (https://www.acmicpc.net/problemset?sort=ac_desc&algo=25)
 - [X] [피보나치 함수](https://www.acmicpc.net/problem/1003)
