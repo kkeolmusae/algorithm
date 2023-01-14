@@ -61,53 +61,53 @@
 
 #### 400 - 다이나믹 프로그래밍 1
 
-- [X] [1로 만들기](https://www.acmicpc.net/problem/1463) (Review)
-- [X] [2×n 타일링](https://www.acmicpc.net/problem/11726)
-- [X] [2×n 타일링 2](https://www.acmicpc.net/problem/11727)
-- [X] [1, 2, 3 더하기](https://www.acmicpc.net/problem/9095)
-- [X] [카드 구매하기](https://www.acmicpc.net/problem/11052)
-- [X] [카드 구매하기 2](https://www.acmicpc.net/problem/16194)
-- [X] [1, 2, 3 더하기 5](https://www.acmicpc.net/problem/15990)
-- [X] [쉬운 계단 수](https://www.acmicpc.net/problem/10844)
-- [X] [이친수](https://www.acmicpc.net/problem/2193)
-- [X] [가장 긴 증가하는 부분 수열](https://www.acmicpc.net/problem/11053)
-- [X] [가장 긴 증가하는 부분 수열 4](https://www.acmicpc.net/problem/14002)
-- [X] [연속합](https://www.acmicpc.net/problem/1912)
-- [X] [제곱수의 합](https://www.acmicpc.net/problem/1699)
-- [X] [합분해](https://www.acmicpc.net/problem/2225)
+- [X] [1로 만들기](https://www.acmicpc.net/problem/1463) S3
+- [X] [2×n 타일링](https://www.acmicpc.net/problem/11726) S3
+- [X] [2×n 타일링 2](https://www.acmicpc.net/problem/11727) S3
+- [X] [1, 2, 3 더하기](https://www.acmicpc.net/problem/9095) S3
+- [X] [카드 구매하기](https://www.acmicpc.net/problem/11052) S1
+- [X] [카드 구매하기 2](https://www.acmicpc.net/problem/16194) S1
+- [X] [1, 2, 3 더하기 5](https://www.acmicpc.net/problem/15990) S2
+- [X] [쉬운 계단 수](https://www.acmicpc.net/problem/10844) S1
+- [X] [이친수](https://www.acmicpc.net/problem/2193) S3
+- [X] [가장 긴 증가하는 부분 수열](https://www.acmicpc.net/problem/11053) S2
+- [X] [가장 긴 증가하는 부분 수열 4](https://www.acmicpc.net/problem/14002) G4
+- [X] [연속합](https://www.acmicpc.net/problem/1912) S2
+- [X] [제곱수의 합](https://www.acmicpc.net/problem/1699) S2
+- [X] [합분해](https://www.acmicpc.net/problem/2225) G5
 
 #### 401 - 다이나믹 프로그래밍 1 (연습)
 
-- [X] [1, 2, 3 더하기 3](https://www.acmicpc.net/problem/15988)
-- [X] [RGB거리](https://www.acmicpc.net/problem/1149)
-- [X] [동물원](https://www.acmicpc.net/problem/1309)
-- [X] [오르막 수](https://www.acmicpc.net/problem/11057)
-- [X] [스티커](https://www.acmicpc.net/problem/9465)
-- [X] [포도주 시식](https://www.acmicpc.net/problem/2156)
-- [X] [정수 삼각형](https://www.acmicpc.net/problem/1932)
-- [X] [가장 큰 증가 부분 수열](https://www.acmicpc.net/problem/11055)
-- [X] [가장 긴 감소하는 부분 수열](https://www.acmicpc.net/problem/11722)
-- [X] [가장 긴 바이토닉 부분 수열](https://www.acmicpc.net/problem/11054)
-- [X] [연속합 2](https://www.acmicpc.net/problem/13398)
-- [X] [타일 채우기](https://www.acmicpc.net/problem/2133)
+- [X] [1, 2, 3 더하기 3](https://www.acmicpc.net/problem/15988) S2
+- [X] [RGB거리](https://www.acmicpc.net/problem/1149) S1
+- [X] [동물원](https://www.acmicpc.net/problem/1309) S1
+- [X] [오르막 수](https://www.acmicpc.net/problem/11057) S1
+- [X] [스티커](https://www.acmicpc.net/problem/9465) S1
+- [X] [포도주 시식](https://www.acmicpc.net/problem/2156) S1
+- [X] [정수 삼각형](https://www.acmicpc.net/problem/1932) S1
+- [X] [가장 큰 증가 부분 수열](https://www.acmicpc.net/problem/11055) S2
+- [X] [가장 긴 감소하는 부분 수열](https://www.acmicpc.net/problem/11722) S2
+- [X] [가장 긴 바이토닉 부분 수열](https://www.acmicpc.net/problem/11054) G4
+- [X] [연속합 2](https://www.acmicpc.net/problem/13398) G5
+- [X] [타일 채우기](https://www.acmicpc.net/problem/2133) G4
 
 #### 402 - 다이나믹 프로그래밍 1 (도전)
 
-- [X] [동물원](https://www.acmicpc.net/problem/1309)
-- [X] [RGB거리 2](https://www.acmicpc.net/problem/17404) (Review)
-- [X] [합분해](https://www.acmicpc.net/problem/2225)
+- [X] [동물원](https://www.acmicpc.net/problem/1309) S1
+- [X] [RGB거리 2](https://www.acmicpc.net/problem/17404) G4
+- [X] [합분해](https://www.acmicpc.net/problem/2225) G5
 
 #### 403 - 다이나믹 프로그래밍 0 (보충) (https://www.acmicpc.net/problemset?sort=ac_desc&algo=25)
-- [X] [설탕배달](https://www.acmicpc.net/problem/2839) (Plus)
-- [X] [피보나치 함수](https://www.acmicpc.net/problem/1003)
-- [X] [부녀회장이 될테야](https://www.acmicpc.net/problem/2775)
-- [X] [계단 오르기](https://www.acmicpc.net/problem/2579)
-- [X] [정수 삼각형](https://www.acmicpc.net/problem/1932)
-- [X] [파도반 수열](https://www.acmicpc.net/problem/9461)
-- [X] [피보나치 수 2](https://www.acmicpc.net/problem/2748)
-- [X] [다리 놓기](https://www.acmicpc.net/problem/1010)
-- [X] [01타일](https://www.acmicpc.net/problem/1904)
-- [X] [퇴사](https://www.acmicpc.net/problem/14051)
+- [X] [설탕배달](https://www.acmicpc.net/problem/2839) S4
+- [X] [피보나치 함수](https://www.acmicpc.net/problem/1003) S3
+- [X] [부녀회장이 될테야](https://www.acmicpc.net/problem/2775) B1
+- [X] [계단 오르기](https://www.acmicpc.net/problem/2579) S3
+- [X] [정수 삼각형](https://www.acmicpc.net/problem/1932) S1
+- [X] [파도반 수열](https://www.acmicpc.net/problem/9461) S3
+- [X] [피보나치 수 2](https://www.acmicpc.net/problem/2748) B1
+- [X] [다리 놓기](https://www.acmicpc.net/problem/1010) S5
+- [X] [01타일](https://www.acmicpc.net/problem/1904) S3
+- [X] [퇴사](https://www.acmicpc.net/problem/14501) S3
 ---
 
 ## **알고리즘 기초 2/2**
