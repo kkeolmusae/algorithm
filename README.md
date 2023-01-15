@@ -116,7 +116,7 @@
 
 - [X] [일곱 난쟁이](https://www.acmicpc.net/problem/2309)
 - [X] [사탕 게임](https://www.acmicpc.net/problem/3085)
-- [ ] [날짜 계산](https://www.acmicpc.net/problem/1476)
+- [?] [날짜 계산](https://www.acmicpc.net/problem/1476)
 - [ ] [리모컨](https://www.acmicpc.net/problem/1107)
 - [ ] [테트로미노](https://www.acmicpc.net/problem/14500)
 - [ ] [카잉 달력](https://www.acmicpc.net/problem/6064)
