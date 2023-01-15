@@ -114,8 +114,8 @@
 
 #### 500 - 브루트 포스
 
-- [ ] [일곱 난쟁이](https://www.acmicpc.net/problem/2309)
-- [ ] [사탕 게임](https://www.acmicpc.net/problem/3085)
+- [X] [일곱 난쟁이](https://www.acmicpc.net/problem/2309)
+- [X] [사탕 게임](https://www.acmicpc.net/problem/3085)
 - [ ] [날짜 계산](https://www.acmicpc.net/problem/1476)
 - [ ] [리모컨](https://www.acmicpc.net/problem/1107)
 - [ ] [테트로미노](https://www.acmicpc.net/problem/14500)
