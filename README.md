@@ -119,7 +119,7 @@
 - [?] [날짜 계산](https://www.acmicpc.net/problem/1476)
 - [ ] [리모컨](https://www.acmicpc.net/problem/1107)
 - [ ] [테트로미노](https://www.acmicpc.net/problem/14500)
-- [ ] [카잉 달력](https://www.acmicpc.net/problem/6064)
+- [X] [카잉 달력](https://www.acmicpc.net/problem/6064)
 - [X] [수 이어 쓰기 1](https://www.acmicpc.net/problem/1748)
 - [X] [1, 2, 3 더하기](https://www.acmicpc.net/problem/9095)
 
