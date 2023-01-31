@@ -120,8 +120,8 @@
 - [ ] [리모컨](https://www.acmicpc.net/problem/1107)
 - [ ] [테트로미노](https://www.acmicpc.net/problem/14500)
 - [ ] [카잉 달력](https://www.acmicpc.net/problem/6064)
-- [ ] [수 이어 쓰기 1](https://www.acmicpc.net/problem/1748)
-- [ ] [1, 2, 3 더하기](https://www.acmicpc.net/problem/9095)
+- [X] [수 이어 쓰기 1](https://www.acmicpc.net/problem/1748)
+- [X] [1, 2, 3 더하기](https://www.acmicpc.net/problem/9095)
 
 #### 510 - 브루트 포스 (N과 M)
 
