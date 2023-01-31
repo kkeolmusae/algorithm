@@ -67,8 +67,8 @@ function solution(input) {
 
       startY += M;
 
-      while (startY > N) {
-        startY = startY - N;
+      if (startY > N) {
+        startY = startY % N === 0 ? N : startY % N;
       }
       years += M;
     }
