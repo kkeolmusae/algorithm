@@ -4,32 +4,48 @@
  */
 const input = require("fs").readFileSync("/dev/stdin").toString().trim().split("\n");
 
-function sortAsc(arr) {
-  return arr.sort((a, b) => {
-    return a - b;
-  });
-}
-function sortDesc(arr) {
-  return arr.sort((a, b) => {
-    return b - a;
-  });
-}
-function createGraph(input) {
-  const graph = {};
+const dfsVisited = [];
+const dfsVisitedNode = [];
+
+function createGraph(input, N) {
+  const graph = [];
+
+  for (let i = 1; i <= N; i++) {
+    graph[i] = [];
+  }
   for (const elem of input) {
     const [nodeA, nodeB] = elem.split(" ").map(Number);
-    graph[nodeA] = graph[nodeA] ? [...graph[nodeA], nodeB] : [nodeB];
-    graph[nodeB] = graph[nodeB] ? [...graph[nodeB], nodeA] : [nodeA];
+    graph[nodeA].push(nodeB);
+    graph[nodeB].push(nodeA);
+  }
+  for (let i = 1; i <= N; i++) {
+    graph[i] = graph[i].sort((a, b) => {
+      return a - b;
+    });
   }
   return graph;
 }
 function solution(input) {
   const [N, M, V] = input.shift().split(" ").map(Number); // N: 정점의 개수, M: 간선의 개수, V: 탐색을 시작할 정점의 번호 V
-  const graph = createGraph(input);
+  const graph = createGraph(input, N);
 
+  dfs(graph, V);
   const bfsResult = bfs(graph, V);
-  const dfsResult = dfs(graph, V);
-  return [dfsResult.join(" "), bfsResult.join(" ")].join("\n");
+  return [dfsVisitedNode.join(" "), bfsResult.join(" ")].join("\n");
+}
+
+function dfs(graph, startNode) {
+  if (!dfsVisited[startNode]) {
+    // 탐색한 적 없으면
+    dfsVisited[startNode] = true; // 탐색처리
+    dfsVisitedNode.push(startNode); // 탐색할 노드에 추가
+  }
+
+  for (const node of graph[startNode]) {
+    if (!dfsVisited[node]) {
+      dfs(graph, node);
+    }
+  }
 }
 
 function bfs(graph, startNode) {
@@ -43,23 +59,7 @@ function bfs(graph, startNode) {
     if (!visited.includes(node)) {
       // 탐색한 노드가 탐색한적 없는 노드면
       visited.push(node); // 탐색 처리
-      if (graph[node]) needVisit = [...needVisit, ...sortAsc([...graph[node]])]; // 탐색할 노드 = 기존 탐색할 노드 + 탐색한 노드의 인접노드들(정렬)
-    }
-  }
-  return visited;
-}
-
-function dfs(graph, startNode) {
-  const visited = []; // 탐색한 노드
-  let needVisit = []; // 탐색할 노드
-
-  needVisit.push(startNode);
-
-  while (needVisit.length) {
-    const node = needVisit.pop(); // 탐색할 노드에서 가장뒤에꺼 탐색 (pop로 목록에서 제거)
-    if (!visited.includes(node)) {
-      visited.push(node); // 탐색 처리
-      if (graph[node]) needVisit = [...needVisit, ...sortDesc([...graph[node]])]; // 탐색할 노드 = 기존 탐색할 노드 + 탐색한 노드의 인접노드(정렬한뒤 역순)
+      if (graph[node]) needVisit = [...needVisit, ...graph[node]]; // 탐색할 노드 = 기존 탐색할 노드 + 탐색한 노드의 인접노드들(정렬)
     }
   }
   return visited;
