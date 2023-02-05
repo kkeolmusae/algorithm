@@ -187,6 +187,9 @@
 - [ ] [DFS 스페셜 저지](https://www.acmicpc.net/problem/16964)
 - [ ] [다리 만들기](https://www.acmicpc.net/problem/2146)
 
+#### 603 - 그래프 1 (추가)
+- [X] [전쟁 - 전투](https://www.acmicpc.net/problem/1303)
+
 #### 610 - BFS
 
 - [ ] [숨바꼭질](https://www.acmicpc.net/problem/1697)
