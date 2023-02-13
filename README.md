@@ -166,13 +166,13 @@
 
 #### 600 - 그래프 1
 
-- [ ] [ABCDE](https://www.acmicpc.net/problem/13023)
+- [X] [ABCDE](https://www.acmicpc.net/problem/13023)
 - [X] [DFS와 BFS](https://www.acmicpc.net/problem/1260)
 - [X] [연결 요소의 개수](https://www.acmicpc.net/problem/11724)
 - [ ] [이분 그래프](https://www.acmicpc.net/problem/1707)
 - [ ] [단지번호붙이기](https://www.acmicpc.net/problem/2667)
 - [ ] [섬의 개수](https://www.acmicpc.net/problem/4963)
-- [ ] [미로 탐색](https://www.acmicpc.net/problem/2178)
+- [X] [미로 탐색](https://www.acmicpc.net/problem/2178)
 - [ ] [토마토](https://www.acmicpc.net/problem/7576)
 - [ ] [나이트의 이동](https://www.acmicpc.net/problem/7562)
 
