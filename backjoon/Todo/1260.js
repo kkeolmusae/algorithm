@@ -34,6 +34,7 @@ function solution(input) {
   return [dfsVisitedNode.join(" "), bfsResult.join(" ")].join("\n");
 }
 
+// 스택으로 구현한 dfs
 function dfs(graph, startNode) {
   if (!dfsVisited[startNode]) {
     // 탐색한 적 없으면
@@ -48,6 +49,7 @@ function dfs(graph, startNode) {
   }
 }
 
+// 스택으로 구현한 bfs
 function bfs(graph, startNode) {
   const visited = []; // 탐색한 노드
   let needVisit = []; // 탐색할 노드

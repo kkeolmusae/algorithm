@@ -40,6 +40,7 @@ function solution(input) {
   return 0;
 }
 
+// 재귀로 구현한 dfs
 function dfs(graph, node, depth) {
   visitedNode[node] = true;
   if (depth === 5) {
