@@ -26,7 +26,7 @@ function solution(input) {
   const [M, N] = input[0].split(" ").map(Number); // M: 가로, N: 세로
   const graph = input.slice(1);
 
-  const box = getBox(M, N, graph);
+  const [box, checkBox] = getBox(M, N, graph);
 
   let warm = 0;
   let flag = true;
@@ -42,51 +42,26 @@ function solution(input) {
   // 토마토가 모두 익지 못하는 상황 (익은 토마토가 없는 경우)
   if (flag) return -1;
 
-  while (true) {
-    const isFinish = checkFinish(M, N, box);
-    if (isFinish === 1) {
-      return warm;
-    } else if (isFinish === -1) {
-      return -1;
-    }
-    const result = bfs(startIdx, box);
-    if (result === -1) {
-      return -1;
-    }
-    warm += result;
-  }
-  answer.push(warm);
+  const count = bfs(startIdx, box, checkBox);
 
-  return answer.join("\n");
-}
+  const result = checkFinish(M, N, box);
 
-function checkFail(i, j, box) {
-  const right = box[i + d[0][0]][j + d[0][1]];
-  const bottom = box[i + d[1][0]][j + d[1][1]];
-  const left = box[i + d[2][0]][j + d[2][1]];
-  const top = box[i + d[3][0]][j + d[3][1]];
+  if (result) return count;
 
-  if (right + bottom + left + top === -4 && box[i][j] === 0) return true;
-  return false;
+  return -1;
 }
 
 function checkFinish(M, N, box) {
   // M: 가로, N: 세로
-  const max = M * N;
-  let count = 0;
   for (let i = 1; i <= N; i++) {
     for (let j = 1; j <= M; j++) {
-      if (box[i][j] === 1 || box[i][j] === -1) count++;
-      if (checkFail(i, j, box)) {
-        return -1;
-      }
+      if (box[i][j] === 0) return false;
     }
   }
-  if (max === count) return 1; //
-  return 0;
+  return true;
 }
 
-function bfs(startIdx, graph) {
+function bfs(startIdx, box, checkBox) {
   let count = 0;
   let needVisit = [];
   let needVisitTemp = []; // 임시
@@ -94,13 +69,17 @@ function bfs(startIdx, graph) {
   needVisit = startIdx;
 
   while (needVisit.length) {
-    const next = needVisit.shift();
+    const next = needVisit.pop();
 
-    graph[next[0]][next[1]] = 1; // 방문처리
-    // 방문한곳 처리안하게?
+    if (checkBox[next[0]][next[1]] === 1) continue;
+
+    box[next[0]][next[1]] = 1; // 방문처리
+    checkBox[next[0]][next[1]] = 1; // 주변 방문처리
+
+    // 오른쪽 -> 아래 -> 왼쪽 -> 위 순서로 순회
     for (let idx = 0; idx <= 3; idx++) {
-      if (graph[next[0] + d[idx][0]][next[1] + d[idx][1]] === 0) {
-        graph[next[0] + d[idx][0]][next[1] + d[idx][1]] = 1;
+      if (box[next[0] + d[idx][0]][next[1] + d[idx][1]] === 0) {
+        box[next[0] + d[idx][0]][next[1] + d[idx][1]] = 1;
         needVisitTemp.push([next[0] + d[idx][0], next[1] + d[idx][1]]);
       }
     }
@@ -116,14 +95,18 @@ function bfs(startIdx, graph) {
 function getBox(M, N, graph) {
   // M: 가로, N: 세로
   const box = [];
+  const checkBox = [];
 
   box[0] = new Array(M + 2).fill(-1);
+  checkBox[0] = new Array(M + 2).fill(-1);
 
   for (let i = 0; i < N; i++) {
     box[i + 1] = [-1, ...graph[i].split(" ").map(Number), -1];
+    checkBox[i + 1] = [-1, ...new Array(M).fill(0), -1];
   }
   box[N + 1] = new Array(M + 2).fill(-1);
-  return box;
+  checkBox[N + 1] = new Array(M + 2).fill(-1);
+  return [box, checkBox];
 }
 
 console.log(solution(input));
