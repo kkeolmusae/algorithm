@@ -171,10 +171,10 @@
 - [X] [연결 요소의 개수](https://www.acmicpc.net/problem/11724)
 - [ ] [이분 그래프](https://www.acmicpc.net/problem/1707)
 - [X] [단지번호붙이기](https://www.acmicpc.net/problem/2667)
-- [ ] [섬의 개수](https://www.acmicpc.net/problem/4963)
+- [X] [섬의 개수](https://www.acmicpc.net/problem/4963)
 - [X] [미로 탐색](https://www.acmicpc.net/problem/2178)
 - [X] [토마토](https://www.acmicpc.net/problem/7576)
-- [ ] [나이트의 이동](https://www.acmicpc.net/problem/7562)
+- [X] [나이트의 이동](https://www.acmicpc.net/problem/7562)
 
 #### 601 - 그래프 1 (연습)
 
@@ -192,7 +192,7 @@
 
 #### 610 - BFS
 
-- [ ] [숨바꼭질](https://www.acmicpc.net/problem/1697)
+- [X] [숨바꼭질](https://www.acmicpc.net/problem/1697)
 - [ ] [숨바꼭질 4](https://www.acmicpc.net/problem/13913)
 - [ ] [이모티콘](https://www.acmicpc.net/problem/14226)
 - [ ] [숨바꼭질 3](https://www.acmicpc.net/problem/13549)
