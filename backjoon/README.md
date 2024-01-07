@@ -649,12 +649,32 @@
 - [ ] [서로소의 개수](https://www.acmicpc.net/problem/1750)
 - [ ] [그래프 매칭](https://www.acmicpc.net/problem/3644)
 
+---
+
+## 그리디 추천 문제
+
+#### 유튜브 - 개발자로 취직하기 (https://www.youtube.com/watch?v=_IZuE7NIeW4&t=417s)
+- [ ] [세탁소 사장 동혁](https://www.acmicpc.net/problem/2720)
+- [ ] [전자레인지](https://www.acmicpc.net/problem/10162)
+- [ ] [거스름돈](https://www.acmicpc.net/problem/5585)
+- [ ] [캠핑](https://www.acmicpc.net/problem/4796)
+- [ ] [컵홀더](https://www.acmicpc.net/problem/2810)
+
+- [ ] [설탕배달](https://www.acmicpc.net/problem/2839)
+- [ ] [ATM](https://www.acmicpc.net/problem/11399)
+- [ ] [동전 0](https://www.acmicpc.net/problem/11047)
+- [ ] [잃어버린 괄호](https://www.acmicpc.net/problem/1541)
+- [ ] [회의실 배정](https://www.acmicpc.net/problem/1931)
+
+- [ ] [강의실 배정](https://www.acmicpc.net/problem/11000)
+- [ ] [카드 정렬하기](https://www.acmicpc.net/problem/1715)
+- [ ] [단어 수학](https://www.acmicpc.net/problem/1339)
+- [ ] [수 묶기](https://www.acmicpc.net/problem/1744)
+- [ ] [보석 도둑](https://www.acmicpc.net/problem/1202)
+
+---
+
 참고
 
 [https://code.plus/](https://code.plus/)
 
-[code.plus
-
-코드 플러스는 코딩강의를 합니다
-
-code.plus](https://code.plus/)
