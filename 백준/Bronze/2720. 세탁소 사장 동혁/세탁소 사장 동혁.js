@@ -2,23 +2,30 @@ const input = require("fs").readFileSync("/dev/stdin").toString().trim().split("
 
 function solution(input) {
   const count = Number(input[0]);
-  let answer = "";
+  let answers = "";
 
-  const QUARTER = 25;
-  const DIME = 10;
-  const NICKEL = 5;
-  const PENNY = 1;
+  const moneyType = {
+    QUARTER: 25,
+    DIME: 10,
+    NICKEL: 5,
+    PENNY: 1,
+  };
 
   for (let idx = 0; idx < count; idx++) {
-    const change = Number(input[idx + 1]);
-    const quarterCount = Math.floor(change / QUARTER);
-    const dimeCount = Math.floor((change - quarterCount * QUARTER) / DIME);
-    const nickelCount = Math.floor((change - quarterCount * QUARTER - dimeCount * DIME) / NICKEL);
-    const pennyCount = Math.floor((change - quarterCount * QUARTER - dimeCount * DIME - nickelCount * NICKEL) / PENNY);
+    const moneyCount = {};
+    let changes = Number(input[idx + 1]);
+    let answer = "";
 
-    answer += `${quarterCount} ${dimeCount} ${nickelCount} ${pennyCount}\n`;
+    for (const key in moneyType) {
+      const changeCount = Math.floor(changes / moneyType[key]);
+      moneyCount[key] = changeCount;
+      changes -= moneyCount[key] * moneyType[key];
+      answer += `${moneyCount[key]} `;
+    }
+    answers += `${answer.trim()}\n`;
   }
-  return answer.trim();
+
+  return answers.trim();
 }
 
 console.log(solution(input));
