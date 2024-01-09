@@ -657,8 +657,8 @@
 - [X] [세탁소 사장 동혁](https://www.acmicpc.net/problem/2720)
 - [X] [전자레인지](https://www.acmicpc.net/problem/10162)
 - [X] [거스름돈](https://www.acmicpc.net/problem/5585)
-- [ ] [캠핑](https://www.acmicpc.net/problem/4796)
-- [ ] [컵홀더](https://www.acmicpc.net/problem/2810)
+- [X] [캠핑](https://www.acmicpc.net/problem/4796)
+- [X] [컵홀더](https://www.acmicpc.net/problem/2810)
 
 - [ ] [설탕배달](https://www.acmicpc.net/problem/2839)
 - [ ] [ATM](https://www.acmicpc.net/problem/11399)
