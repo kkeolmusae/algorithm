@@ -660,7 +660,7 @@
 - [X] [캠핑](https://www.acmicpc.net/problem/4796)
 - [X] [컵홀더](https://www.acmicpc.net/problem/2810)
 
-- [ ] [설탕배달](https://www.acmicpc.net/problem/2839)
+- [X] [설탕배달](https://www.acmicpc.net/problem/2839)
 - [ ] [ATM](https://www.acmicpc.net/problem/11399)
 - [ ] [동전 0](https://www.acmicpc.net/problem/11047)
 - [ ] [잃어버린 괄호](https://www.acmicpc.net/problem/1541)
