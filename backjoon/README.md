@@ -661,8 +661,8 @@
 - [X] [컵홀더](https://www.acmicpc.net/problem/2810)
 
 - [X] [설탕배달](https://www.acmicpc.net/problem/2839)
-- [ ] [ATM](https://www.acmicpc.net/problem/11399)
-- [ ] [동전 0](https://www.acmicpc.net/problem/11047)
+- [X] [ATM](https://www.acmicpc.net/problem/11399)
+- [X] [동전 0](https://www.acmicpc.net/problem/11047)
 - [ ] [잃어버린 괄호](https://www.acmicpc.net/problem/1541)
 - [ ] [회의실 배정](https://www.acmicpc.net/problem/1931)
 
