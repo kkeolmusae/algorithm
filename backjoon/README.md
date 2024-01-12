@@ -64,7 +64,7 @@
 - [X] [1로 만들기](https://www.acmicpc.net/problem/1463) S3
 - [X] [2×n 타일링](https://www.acmicpc.net/problem/11726) S3
 - [X] [2×n 타일링 2](https://www.acmicpc.net/problem/11727) S3
-- [X] [1, 2, 3 더하기](https://www.acmicpc.net/problem/9095) S3
+- [X] [1, 2, 3 더하기](https://www.acmicpc.net/problem/9095) S3 (Review)
 - [X] [카드 구매하기](https://www.acmicpc.net/problem/11052) S1
 - [X] [카드 구매하기 2](https://www.acmicpc.net/problem/16194) S1
 - [X] [1, 2, 3 더하기 5](https://www.acmicpc.net/problem/15990) S2
@@ -663,7 +663,7 @@
 - [X] [설탕배달](https://www.acmicpc.net/problem/2839)
 - [X] [ATM](https://www.acmicpc.net/problem/11399)
 - [X] [동전 0](https://www.acmicpc.net/problem/11047)
-- [ ] [잃어버린 괄호](https://www.acmicpc.net/problem/1541)
+- [X] [잃어버린 괄호](https://www.acmicpc.net/problem/1541) S2 (Review)
 - [ ] [회의실 배정](https://www.acmicpc.net/problem/1931)
 
 - [ ] [강의실 배정](https://www.acmicpc.net/problem/11000)
