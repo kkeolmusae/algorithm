@@ -11,7 +11,7 @@ function solution(input) {
   for (let i = 0; i < N; i++) {
     let cal = 1;
     for (let j = data[i].length - 1; j >= 0; j--) {
-      alphabetCount[data[i][j]] = (alphabetCount[data[i][j]] || 1) + cal;
+      alphabetCount[data[i][j]] = (alphabetCount[data[i][j]] || 0) + cal;
       cal *= 10;
     }
   }
