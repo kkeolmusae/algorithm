@@ -664,9 +664,9 @@
 - [X] [ATM](https://www.acmicpc.net/problem/11399)
 - [X] [동전 0](https://www.acmicpc.net/problem/11047)
 - [X] [잃어버린 괄호](https://www.acmicpc.net/problem/1541) S2 (Review)
-- [ ] [회의실 배정](https://www.acmicpc.net/problem/1931)
+- [X] [회의실 배정](https://www.acmicpc.net/problem/1931)
 
-- [ ] [강의실 배정](https://www.acmicpc.net/problem/11000)
+- [ ] [강의실 배정](https://www.acmicpc.net/problem/11000) (Review)
 - [ ] [카드 정렬하기](https://www.acmicpc.net/problem/1715)
 - [ ] [단어 수학](https://www.acmicpc.net/problem/1339)
 - [ ] [수 묶기](https://www.acmicpc.net/problem/1744)
