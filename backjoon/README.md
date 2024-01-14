@@ -666,8 +666,8 @@
 - [X] [잃어버린 괄호](https://www.acmicpc.net/problem/1541) S2 (Review)
 - [X] [회의실 배정](https://www.acmicpc.net/problem/1931)
 
-- [ ] [강의실 배정](https://www.acmicpc.net/problem/11000) (Review)
-- [ ] [카드 정렬하기](https://www.acmicpc.net/problem/1715)
+- [X] [강의실 배정](https://www.acmicpc.net/problem/11000) (Review)
+- [X] [카드 정렬하기](https://www.acmicpc.net/problem/1715)
 - [ ] [단어 수학](https://www.acmicpc.net/problem/1339)
 - [ ] [수 묶기](https://www.acmicpc.net/problem/1744)
 - [ ] [보석 도둑](https://www.acmicpc.net/problem/1202)
