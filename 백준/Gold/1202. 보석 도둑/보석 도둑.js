@@ -85,9 +85,12 @@ function solution(input) {
   let answer = 0;
   const heap = new MaxHeap();
 
-  const [N, K] = input.shift();
-  let jewel = input.splice(0, N).sort((a, b) => a[0] - b[0]);
-  let bag = input.map((v) => v[0]).sort((a, b) => a - b);
+  const [N, K] = input[0];
+  let jewel = input.slice(1, N + 1).sort((a, b) => a[0] - b[0]);
+  let bag = input
+    .slice(N + 1, N + 1 + K)
+    .map((v) => v[0])
+    .sort((a, b) => a - b);
 
   let j = 0;
   for (let i = 0; i < K; i++) {
