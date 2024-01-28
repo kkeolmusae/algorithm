@@ -651,6 +651,12 @@
 
 ---
 
+참고
+
+[https://code.plus/](https://code.plus/)
+
+---
+
 ## 그리디 추천 문제
 
 #### 유튜브 - 개발자로 취직하기 (https://www.youtube.com/watch?v=_IZuE7NIeW4&t=417s)
@@ -663,18 +669,14 @@
 - [X] [설탕배달](https://www.acmicpc.net/problem/2839)
 - [X] [ATM](https://www.acmicpc.net/problem/11399)
 - [X] [동전 0](https://www.acmicpc.net/problem/11047)
-- [X] [잃어버린 괄호](https://www.acmicpc.net/problem/1541) S2 (Review)
+- [X] [잃어버린 괄호](https://www.acmicpc.net/problem/1541)
 - [X] [회의실 배정](https://www.acmicpc.net/problem/1931)
 
-- [X] [강의실 배정](https://www.acmicpc.net/problem/11000) (Review)
+- [X] [강의실 배정](https://www.acmicpc.net/problem/11000)
 - [X] [카드 정렬하기](https://www.acmicpc.net/problem/1715)
-- [ ] [단어 수학](https://www.acmicpc.net/problem/1339)
-- [ ] [수 묶기](https://www.acmicpc.net/problem/1744)
-- [ ] [보석 도둑](https://www.acmicpc.net/problem/1202)
+- [X] [단어 수학](https://www.acmicpc.net/problem/1339)
+- [X] [수 묶기](https://www.acmicpc.net/problem/1744)
+- [X] [보석 도둑](https://www.acmicpc.net/problem/1202)
 
----
 
-참고
-
-[https://code.plus/](https://code.plus/)
 
