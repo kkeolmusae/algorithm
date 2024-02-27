@@ -1,0 +1,17 @@
+# input
+02984
+
+# output
+576
+
+# input
+567
+
+# output
+210
+
+# input
+121
+
+# output
+4
