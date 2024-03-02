@@ -1,0 +1,11 @@
+input
+K1KA5CB7
+
+output
+ABCKK13
+
+input
+AJKDLSI412K4JSJ9D
+
+output
+ADDIJJJKKLSS20
