@@ -1,0 +1,51 @@
+"aabbaccc"	7
+
+"ababcdcdababcdcd"	9
+
+"abcabcdede"	8
+
+"abcabcabcabcdededededede"	14
+
+"xababcdcdababcdcd"	17
+
+
+
+
+def compress(s, unit):
+    compressed = ""
+    prev = s[:unit]
+    count = 1
+
+    for i in range(unit, len(s), unit):
+        current = s[i : i + unit]
+
+        if prev == current:
+            count += 1
+        else:
+            if count > 1:
+                compressed += str(count)
+            compressed += prev
+            prev = current
+            count = 1
+
+    if count > 1:
+        compressed += str(count)
+    compressed += prev
+
+    return compressed
+
+
+def solution(s):
+    answer = len(s)
+
+    # 문자열을 1부터 절반까지의 단위로 자르면서 압축하여 가장 짧은 문자열 길이를 찾음
+    for unit in range(1, len(s) // 2 + 1):
+        compressed = compress(s, unit)
+        answer = min(answer, len(compressed))
+
+    return answer
+
+
+# Example
+s = "aabbaccc"
+print(solution(s))  # Output: 7
