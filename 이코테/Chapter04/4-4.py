@@ -20,21 +20,33 @@ def solution():
         return direction
 
     try_cnt = 0
-    while try_cnt < 4:
+    while True:
         if board[x][y] == 0:
             board[x][y] = 2  # 방문 처리
             cnt += 1
 
+        # 1.방향 전환
         direction = turn_left(direction)
 
         nx = x + dx[direction]
         ny = y + dy[direction]
         try_cnt += 1
 
+        # 2. 가보지 않았으면 이동
         if board[nx][ny] == 0:  # 가본적 없는 곳이면 이동
             x = nx
             y = ny
             try_cnt = 0
+
+        if try_cnt == 4:
+            px = x - dx[direction]
+            py = y - dy[direction]
+            if board[px][py] == 1:  # 뒤가 바다면 끝
+                break
+            else:
+                x = px
+                y = py
+                try_cnt = 0
     return cnt
 
 
