@@ -1,3 +1,5 @@
+# 오답
+
 from collections import deque
 
 # 입력
