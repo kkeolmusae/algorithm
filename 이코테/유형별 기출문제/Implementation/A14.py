@@ -30,24 +30,24 @@ def solution(n, weak, dist):
             for selected_weak in list(
                 combinations(expanded_weak[:weak_size], len(used_distance))
             ):
+                # print("---초기화----")
                 weak_set = set(weak)
+                tmp_set = set(weak)
                 for idx in range(len(selected_friends)):
                     w = selected_weak[idx]
                     d = selected_friends[idx]
                     position = w + d - 1
                     # print(f"{d} 만큼 이동하는 친구가 {w} ~ {position+1} 까지 처리")
 
-                    tmp = []
                     for i in weak_set:
-                        expanded_i = i + n
-                        if w <= i and i <= position + 1:
-                            tmp.append(i)
-                        elif w <= expanded_i and expanded_i <= position + 1:
-                            tmp.append(expanded_i % n)
-                    for i in tmp:
-                        weak_set.remove(i)
+                        if (
+                            (w <= i and i <= position + 1)
+                            or (w <= i + n and i + n <= (position + 1))
+                        ) and i in tmp_set:
+                            tmp_set.remove(i)
+                            # print(f"{i} 방문처리")
 
-                if len(weak_set) == 0:
+                if len(tmp_set) == 0:
                     return len(selected_friends)
         distance_idx += 1
         if distance_idx >= len(dist):

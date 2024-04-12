@@ -1,3 +1,6 @@
+/**
+ * https://lhoiktiv.tistory.com/580
+ */
 class MaxHeap {
   constructor() {
     this.heap = [];
@@ -86,7 +89,11 @@ function solution(input) {
   const heap = new MaxHeap();
 
   const [N, K] = input[0];
+
+  // 무게가 가벼운 보석이 앞으로 오게 정렬
   let jewel = input.slice(1, N + 1).sort((a, b) => a[0] - b[0]);
+
+  // 가벼운 걸 담을 수 있는 가방이 앞으로 오게 정렬
   let bag = input
     .slice(N + 1, N + 1 + K)
     .map((v) => v[0])
