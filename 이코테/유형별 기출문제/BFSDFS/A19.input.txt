@@ -1,0 +1,16 @@
+5
+X S X X T
+T X S X X
+X X X X X
+X T X X X
+X X T X X
+예제 출력 1 
+YES
+
+4
+S S S T
+X X X X
+X X X X
+T T T X
+예제 출력 2 
+NO
