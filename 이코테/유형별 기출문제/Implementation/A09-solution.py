@@ -25,3 +25,7 @@ def solution(s):
         # 만들어지는 압축 문자열이 가장 짧은 것이 정답
         answer = min(answer, len(compressed))
     return answer
+
+
+st = "xababcdcdababcdcd"
+print(solution(st))

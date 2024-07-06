@@ -2,6 +2,9 @@
 # n	weak	dist	result
 # 12	[1, 5, 6, 10]	[1, 2, 3, 4]	, result = 2 =>
 # 12	[1, 3, 4, 9, 10]	[3, 5, 7]	, result = 1
+
+# 틀림
+# 다 틀린건 아니고 일부 테스트케이스에서 시간초과 발생함.
 from itertools import combinations, permutations
 import copy
 

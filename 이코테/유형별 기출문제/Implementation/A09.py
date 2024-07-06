@@ -30,5 +30,5 @@ def solution(s):
     return result
 
 
-st = "xababcdcdababcdcd"
+st = "abcabcabcabcdededededede"
 print(solution(st))
