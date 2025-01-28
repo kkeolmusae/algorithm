@@ -3,9 +3,9 @@ def solution(n):
         return 1
 
     tmp = [i for i in range(n)]
-    
+
     left = 1
-    right =2
+    right = 2
     answer = 1
     sum = tmp[left] + tmp[right]
     while left < right:
@@ -17,6 +17,5 @@ def solution(n):
             answer += 1
         sum -= tmp[left]
         left += 1
-        
-    
+
     return answer

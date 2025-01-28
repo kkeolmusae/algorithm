@@ -11,3 +11,5 @@ yarn.lock
 /backjoon/*.txt
 
 /CodingTest/*
+
+memo.py
