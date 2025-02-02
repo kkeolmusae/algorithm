@@ -1,3 +1,12 @@
+# 풀이
+- Difficulty:  Lv1
+- Topic:  연습문제
+- Elapsed Time:  10m
+- Status:  O 
+- Memo: 최소한의 시간복잡도로 하려고 시도하다보니 공간복잡도가 좀 올라간듯. 어렵진않았다.
+
+## 내 풀이
+```py
 from collections import defaultdict
 
 
@@ -26,3 +35,4 @@ def solution(s, skip, index):
         answer += alpha_arr[(alpha_idx[st] + index) % alpha_length]
 
     return answer
+```
