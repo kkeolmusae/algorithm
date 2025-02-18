@@ -3,7 +3,8 @@
 - Topic:  Heap / Priority Queue
 - Elapsed Time:  2m
 - Status:  O (3 times) / X
-- Memo:
+- Approach: 
+- Memo:  
 
 ## 내 풀이
 ```py
